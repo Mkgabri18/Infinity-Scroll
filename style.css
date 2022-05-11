@@ -20,6 +20,11 @@ h1 {
     letter-spacing: 5px;
 }
 
+.loader-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
@@ -29,8 +34,24 @@ h1 {
   height: 120px;
   animation: spin 2s linear infinite;
   position: relative;
-  left: 50%;
-  transform: translate(-50%);
+}
+
+.image-container {
+    margin: 10px 30%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+    .image-container {
+        margin: 10px;
+    }
 }
 
 @keyframes spin {
