@@ -67,7 +67,7 @@ async function getPhotos() {
 
 // Check if scrolling bottom page to load more photos
 window.addEventListener('scroll', () => {
-    if(window.innerHeight + window.scrollY >= imageContainer.offsetHeight - 1000 && ready) {
+    if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready) {
         readey = false
         getPhotos()
     }
